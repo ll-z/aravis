@@ -89,3 +89,8 @@ jobs:
       with:
         name: msvc_build_artifacts
         path: ${{ github.workspace }}/build/artifacts/
+    - name: Download Artifact
+      uses: actions/download-artifact@v3
+      with:
+        name:  msvc_build_artifacts # 与上传时使用的名称相同
+        path: ${{ github.workspace }}/build/artifacts/ # 你希望下载文件到的位置
