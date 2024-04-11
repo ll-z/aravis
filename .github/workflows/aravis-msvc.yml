@@ -85,7 +85,7 @@ jobs:
         path: build/meson-logs/testlog.txt
     - name: Upload Build Artifacts
       uses: actions/upload-artifact@v3
-      if: failure() # 仅在构建失败时上传工件
+      if: always() # 仅在构建失败时上传工件
       with:
         name: msvc_build_artifacts
         path: ${{ github.workspace }}/build/artifacts/
