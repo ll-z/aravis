@@ -87,7 +87,7 @@ jobs:
       uses: actions/upload-artifact@v3
       if: always() # 仅在构建失败时上传工件
       with:
-        name: msvc_build_artifacts
+        name: meson
         path: ${{ github.workspace }}/build/artifacts/
     - name: Download Artifact
       uses: actions/download-artifact@v3
