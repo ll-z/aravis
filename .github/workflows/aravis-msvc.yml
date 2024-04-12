@@ -82,4 +82,4 @@ jobs:
       if: always()
       with:
         name: msvc_${{ matrix.version }}_${{ matrix.arch }}_${{ matrix.build_type_meson }}_Meson_Testlog
-        path: build/meson-logs/testlog.txt
+        path: D:/a/aravis/
