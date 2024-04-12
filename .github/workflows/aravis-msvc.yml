@@ -9,7 +9,7 @@ on:
 
 jobs:
   msvc:
-    runs-on: windows-latest
+    runs-on: windows-2019
     strategy:
       fail-fast: false
       matrix:
@@ -26,7 +26,7 @@ jobs:
       run: |
         rm -r C:\Strawberry\perl
     - name: checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@v3
     - name: conan
       env:
         INPUT_CONANFILE: |
